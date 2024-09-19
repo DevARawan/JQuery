@@ -1,0 +1,14 @@
+{
+    "name": "Ali",
+    "email": "ali@gmail.com",
+    "age": 20,
+    "city": "Lahore",
+    "courses": [
+      "Web",
+      "OOP"
+    ],
+    "address": {
+      "streetAddress": "100 A",
+      "town": "Model Town"
+    }
+  }

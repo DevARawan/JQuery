@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The jQuery Example</title>
+  <script src="jquery-1.9.1.min.js"></script>
+  <!-- 
+      // JQuery is JS library that simplifies JS programming
+      // Used to make HTML/CSS/DOM Manipulation      
+      // Makes AJAX calls easy
+      // Facilitate in Event Handling
+      // Its Cross Browser
+      // Support Animations. Has plugins - that further improve its power
+      
+      // Basic syntax is:
+      // $(selector).action();
+      // $("p").click();
+      // $ is alias to jQuery object
+      // (selector) - "query (or find)" HTML elements
+      // action() to be performed on the element(s)
+
+      // Is DOM ready?
+      // $(document).ready(function(){});
+      // $(function(){}) // same but short
+
+      // Selectors
+      // Universal Selector i.e. *
+      // class based selector: single and multiple
+      // element selector, single and multiple
+      // first element e.g. p:first, last element
+      // any child. immediate child
+      // even and odd elements e.g. tr:even, tr:odd
+      // attribute selector [href] .. all elements with attributes a href
+      // specific type of element with attribute value  e.g. a[target='_blank']
+
+    -->
+
+  <script type="text/javascript" language="javascript">
+
+    $(document).ready(function () {
+      $("#myBtn").click(myBtnClickHandler); // Binding
+    });
+        
+    function myBtnClickHandler(){
+
+      $("#programs>li").hide();
+
+      $("p").css("background-color", "yellow");
+
+      $("#myid").css("color", "red");
+
+    }
+  </script>
+</head>
+
+<body>
+  <div>    
+    <p id="myid">This Para Text.</p>
+    <p>Ths is another para text.</p>
+  </div>
+
+  <ul id="programs">
+    <li>BSCS</li>
+    <li>BSSE</li>
+    <li>MSCS</li>
+    <li>PhD</li>
+  </ul>
+  <button id="myBtn">Click Here</button>
+</body>
+
+</html>
